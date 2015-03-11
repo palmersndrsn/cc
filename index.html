@@ -167,9 +167,9 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiY29pdGNvbSIsImEiOiJoMlhwdEtBIn0.KRDHgqHY_S-RtmxTOjkVTw';
 var map = L.mapbox.map('map', 'examples.map-20v6611k')
     .setView([37.4757152, -122.20574490000001], 9);
-
+    		map.dragging.disable();
         map.scrollWheelZoom.disable();
-    if (map.tap) map.tap.disable();
+    		if (map.tap) map.tap.disable();
 
 L.mapbox.featureLayer({
     // this feature is in the GeoJSON format: see geojson.org
