@@ -15,14 +15,38 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<!-- script -->
 	<script type="text/javascript" src="script.js"></script>
+	<!-- scrollTo -->
+	<script src="vendor/jquery-scrollto/lib/jquery-scrollto.js"></script>
 
 	<meta charset="UTF-8">
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css">
 
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+	<style>
+	  body { margin:0; padding:0; }
+	  #map { position:absolute; top:0; bottom:0; width:100%; height:300px; }
+	</style>
+
+
 
 </head>
 <body>
+	<!--[if lte IE 9]>
+    <script>
+        // browser update script: https://browser-update.org/
+        var $buoop = {c:2};
+        function $buo_f(){
+         var e = document.createElement("script");
+         e.src = "//browser-update.org/update.js";
+         document.body.appendChild(e);
+        };
+        try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+        catch(e){window.attachEvent("onload", $buo_f)}
+    </script>
+	<![endif]-->
 	<nav class="navbar navbar-default transparent navbar-static-top" role="navigation" id="navbar-main">
     <div class="container">
       <div class="navbar-header">
@@ -34,8 +58,8 @@
       </div>
       <div class="collapse navbar-collapse" id="navCollapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Company</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a id="comp" href="#">Company</a></li>
+          <li><a id="cont" href="#">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -57,7 +81,7 @@
   </div><!-- .carousel-inner -->
   <div class="container carousel-overlay text-center">
 		<img class="coitcom-logo" src="public/coitcom-hi-res-AV-Integration-silicon-valley.png">
-		<!-- consider revising -->
+		<!-- consider revising and font change -->
     <h3 class="tagline">Simple, intuitive, cost efficient AV solutions for Silicon Valley</h3>
   </div>
 </div><!-- .carousel -->
@@ -66,10 +90,112 @@
 <div class="container blurb">
   <div class="row">
     <div class="col-xs-12">
-       <p>Your other page content here...</p>
+    	<h3 class="about-header">Experience is key** </h3>
+      <p class="about">Coitcom has over 30 years of experience to help you discover innovative technical solutions for all  your audio visual system designs and installation projects to make sure you are getting the best value for your money, the best equipment for your space, and the best AV systems design to really maximize your overall experience.</p>
+      <p class="about-closing"></p>
     </div><!--/.col -->
   </div><!--/.row -->
 </div><!--/.container -->
+<div class="row">
+	<div class="col-md-6">
+		<div id='map'></div>
+  </div><!--/.col -->
+  <div class="col-md-6 location">
+  	<h3>Located in the heart of Silicon Valley </h3>
+  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos pariatur rem blanditiis, a, modi minima quasi eum facere officia doloremque maxime harum quam totam expedita autem in rerum aliquam aspernatur!</p>
+  </div>
+</div><!--/.row -->
+<div class="row partners-header">
+	<div class="col-md-12 partners">
+		<h3 >Partners</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ut reprehenderit optio quas quaerat autem numquam molestias, animi earum sunt exercitationem, veritatis sit itaque laboriosam sint harum illo explicabo cupiditate.</p>
+	</div>
+</div>
+<div class="row partners-content">
+	<div class="col-md-4 partners">
+		<ul class="partners-one">
+			<li><a href="http://www.crestron.com/">Crestron</a></li>
+			<li>AMX</li>
+			<li>ClearOne</li>
+			<li>BrightSign</li>
+			<li>Chief</li>
+			<li>Extron</li>
+			<li>Cisco</li>
+			<li>Crown</li>
+			<li>Denon</li>
+			<li>Lutron</li>
+			<li>Middle Atlantic</li>
+		</ul>
+	</div>
+	<div class="col-md-4 partners">
+		<ul class="partners-two">
+			<li>JBL</li>
+			<li>Harmon</li>
+			<li>SurgeX</li>
+			<li>B&W</li>
+			<li>RGB Spectrum</li>
+			<li>Planar</li>
+			<li>Shure</li>
+			<li>Sonos</li>
+			<li>Sanus</li>
+			<li>Panamax</li>
+			<li>URC</li>
+		</ul>
+	</div>
+	<div class="col-md-4 partners">
+		<ul class="partners-three">
+			<li>Sharp</li>
+			<li>Panasonic</li>
+			<li>Sony</li>
+			<li>Epson</li>
+			<li>Vaddio</li>
+			<li>Stealth Acoustics</li>
+			<li>Rane</li>
+			<li>Blackmagic</li>
+			<li>Biamp</li>
+			<li>Starleaf</li>
+			<li> </li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<p class="foot">Coitcom Inc.   |     506 2nd Avenue, Redwood City, California    |     (650) 306-2500</p>
+	</div>
+</div>
 
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiY29pdGNvbSIsImEiOiJoMlhwdEtBIn0.KRDHgqHY_S-RtmxTOjkVTw';
+var map = L.mapbox.map('map', 'examples.map-20v6611k')
+    .setView([37.4757152, -122.20574490000001], 9);
+
+        map.scrollWheelZoom.disable();
+    if (map.tap) map.tap.disable();
+
+L.mapbox.featureLayer({
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+    type: 'Feature',
+    geometry: {
+        type: 'Point',
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+        coordinates: [
+          -122.20574490000001,
+          37.4757152
+        ]
+    },
+    properties: {
+        title: 'CoitCom',
+        description: '502 Second Avenue, Redwood City, CA 94063, USA',
+        // one can customize markers by adding simplestyle properties
+        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        'marker-size': 'large',
+        'marker-color': '00BAF2'
+        // 'marker-symbol': 'cafe'
+    }
+}).addTo(map);
+</script>
 </body>
 </html>

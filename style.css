@@ -1,9 +1,39 @@
+.about {
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+}
+.about-header {
+	padding: 50px;
+	text-align: center;
+}
+.about-closing {
+	padding-bottom: 50px;
+}
 body {
 	background-color: rgb(41,45,47);
 }
 .blurb {
+	text-align: center;
+	color: white;
 
-
+}
+.foot {
+	color: white;
+	text-align: center;
+	padding: 50px;
+}
+h3 {
+	letter-spacing: 3px;
+}
+li {
+	text-align: center;
+}
+.location {
+	background-color: rgb(232,232,232);
+	height: 300px;
+	text-align: center;
+	padding: 50px;
 }
 .navbar {
     position: absolute;
@@ -14,8 +44,23 @@ body {
 .navbar-default.transparent {
     background-color: transparent;
 }
+.partners {
+	text-align: center;
+	background-color: white;
+}
+.partners-content {
+	text-align: center;
+	padding: 50px;
+	background-color: white;
+}
+.partners-header{
+	padding-top: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	background-color: white;
+}
 .slide1, .slide2, .slide3 {
-    min-height: 560px;
+    min-height: 700px;
     background-size: cover;
     background-position: center center;
 }
@@ -57,9 +102,16 @@ body {
     left: 0;
 }
 .coitcom-logo {
+	text-align: center;
+	top: -500px;
 	zoom: .5;
+	-moz-transform: scale(.5); /* Firefox */
+	/*-moz-transform-origin: 0 0;*/
 }
 .tagline {
 	color: white;
-
+}
+ul {
+	text-align: center;
+  list-style-type: none;
 }
