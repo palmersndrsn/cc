@@ -55,8 +55,6 @@ li {
 }
 .partners-header{
 	padding-top: 50px;
-	padding-left: 200px;
-	padding-right: 200px;
 	background-color: white;
 }
 .slide1, .slide2, .slide3 {
@@ -104,8 +102,8 @@ li {
 .coitcom-logo {
 	text-align: center;
 	top: -500px;
-	zoom: .5;
-	-moz-transform: scale(.5); /* Firefox */
+	zoom: .4;
+	-moz-transform: scale(.4); /* Firefox */
 	/*-moz-transform-origin: 0 0;*/
 }
 .tagline {
