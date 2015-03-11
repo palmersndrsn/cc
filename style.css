@@ -46,10 +46,17 @@ li {
 	text-align: center;
 }
 .location {
-	background-color: rgb(232,232,232);
+	background-color: rgb(206,206,206);
 	height: 300px;
 	text-align: center;
-	padding: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.location-header {
+	color: white;
+}
+.location-row {
+	background-color: rgb(206,206,206);
 }
 .navbar {
     position: absolute;
