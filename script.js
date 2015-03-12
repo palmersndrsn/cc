@@ -7,7 +7,7 @@ window.onload = function(){
 
   service.on('click', function(){
     $('html, body').animate({
-        scrollTop: $("#blurb").offset().top
+        scrollTop: $("#services").offset().top
     }, 1000);
     return false;
 

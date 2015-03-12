@@ -19,7 +19,6 @@ body {
 }
 .about-header {
 	padding-top: 50px;
-	padding-bottom: 50px;
 	text-align: center;
 }
 .about-closing {
@@ -90,20 +89,20 @@ li {
 	background-color: white;
 }
 .slide1, .slide2, .slide3 {
-  min-height: 700px;
+  min-height: 650px;
   background-size: cover;
   background-position: center center;
 }
 .slide1 {
-  background-image: url(public/DSC_2294.JPG);
+  background-image: url(public/DSC_2294_sm.JPG);
   opacity: .4;
 }
 .slide2 {
-  background-image: url(public/DSC_2283.JPG);
+  background-image: url(public/DSC_2283_sm.JPG);
   opacity: .4;
 }
 .slide3 {
-  background-image: url(public/DSC_2233.JPG);
+  background-image: url(public/DSC_2233_sm.JPG);
   opacity: .4;
 }
 /* Carousel Fade Effect */
@@ -137,6 +136,17 @@ li {
 	zoom: .4;
 	-moz-transform: scale(.4); /* Firefox */
 	/*-moz-transform-origin: 0 0;*/
+}
+.services {
+	text-align: center;
+	background-image: url(public/DSC_2257_sm.JPG);
+	background-size: cover;
+  background-position: center center;
+}
+.services-header {
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .tagline {
 	color: white;
