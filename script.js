@@ -8,7 +8,7 @@ window.onload = function(){
   service.on('click', function(){
     $('html, body').animate({
         scrollTop: $("#blurb").offset().top
-    }, 2000);
+    }, 1000);
     return false;
 
   });
@@ -16,7 +16,7 @@ window.onload = function(){
   contact.on('click', function(){
     $('html, body').animate({
         scrollTop: $("#loc").offset().top
-    }, 2000);
+    }, 1000);
     return false;
   });
 };
