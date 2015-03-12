@@ -1,13 +1,13 @@
 window.onload = function(){
-  var comp = $('#comp');
+  var service = $('#service');
   var cont = $('#cont');
 
-  console.log(comp, cont);
+  console.log(service, cont);
 
-  comp.on('click', function(){
+  service.on('click', function(){
     // preventDefault();
-    $('.blurb').ScrollTo();
-    console.log("company");
+    // $('.blurb').ScrollTo();
+    console.log("service");
 
   });
 
