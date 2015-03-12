@@ -144,12 +144,18 @@ li {
   background-position: center center;
 }
 .services-header {
+	/*color: rgb(0,186,242);*/
 	color: white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+.services-scroll {
+	color: rgb(0,186,242);
+	padding-bottom: 50px;
+}
 .tagline {
 	color: white;
+	font-size: 20px;
 }
 ul {
 	text-align: center;
