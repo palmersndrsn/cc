@@ -12,12 +12,18 @@ window.onload = function(){
   'Auditorium',
   'Huddle Rooms'];
 
-  for (var i in roomArr) {
-    console.log(roomArr[i]);
-    servScroll.innerHTML = roomArr[i];
-  }
-
-  console.log(service, contact);
+  // need to make a continous loop for roomArr
+  // needs a timer
+  // needs an animation
+  // look into CSS before writing script
+  //
+  var roomRotate = function() {
+    for (var i in roomArr) {
+      console.log(roomArr[i]);
+      servScroll.innerHTML = roomArr[i];
+    }
+    roomRotate();
+  };
 
   service.on('click', function(){
     $('html, body').animate({
@@ -34,5 +40,5 @@ window.onload = function(){
     return false;
   });
 
-
+  roomRotate();
 };
