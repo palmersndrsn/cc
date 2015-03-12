@@ -1,18 +1,22 @@
 window.onload = function(){
   var service = $('#service');
-  var cont = $('#cont');
+  var contact = $('#contact');
+  var blurb = $('#blurb');
 
-  console.log(service, cont);
+  console.log(service, contact);
 
   service.on('click', function(){
-    // preventDefault();
-    // $('.blurb').ScrollTo();
-    console.log("service");
+    $('html, body').animate({
+        scrollTop: $("#blurb").offset().top
+    }, 2000);
+    return false;
 
   });
 
-  cont.on('click', function(){
-    // preventDefault();
-    console.log("contact");
+  contact.on('click', function(){
+    $('html, body').animate({
+        scrollTop: $("#loc").offset().top
+    }, 2000);
+    return false;
   });
 };

@@ -31,7 +31,9 @@ body {
 .blurb {
 	text-align: center;
 	color: white;
-
+}
+.contact {
+	color: white !important;
 }
 .foot {
 	color: white;

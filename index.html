@@ -40,7 +40,7 @@
         catch(e){window.attachEvent("onload", $buo_f)}
     </script>
 	<![endif]-->
-	<nav class="navbar navbar-default transparent navbar-static-top" role="navigation" id="navbar-main">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-main">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
@@ -50,8 +50,8 @@
       </div>
       <div class="collapse navbar-collapse" id="navCollapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a id="service" onClick="scroll(0, 100);" href="#">Service</a></li>
-          <li><a id="cont" href="#">Contact</a></li>
+          <li><a id="service" href="#">Service</a></li>
+          <li><a id="contact" href="#">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -79,11 +79,11 @@
 </div><!-- .carousel -->
 <!--end bg-carousel-->
 
-<div class="container blurb">
+<div id="blurb" class="container blurb">
   <div class="row">
   	<div class="col-md-2 col-xs-0"></div>
     <div class="col-md-8 col-xs-12">
-    	<h3 class="about-header">Experience is key** </h3>
+    	<h3 class="about-header">Experience is key</h3>
       <p class="about">Coitcom has over 30 years of experience to help you discover innovative technical solutions for all  your audio visual system designs and installation projects to make sure you are getting the best value for your money, the best equipment for your space, and the best AV systems design to really maximize your overall experience.</p>
       <p class="about-closing"></p>
     </div><!--/.col -->
@@ -91,7 +91,7 @@
 
   </div><!--/.row -->
 </div><!--/.container -->
-<div class="row location-row">
+<div id="loc" class="row location-row">
   <div class="col-md-1 col-xs-0"></div>
   <div class="col-md-4 col-xs-12 location">
   	<h3 class="location-header">Located in the heart of Silicon Valley </h3>
