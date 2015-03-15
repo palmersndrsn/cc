@@ -1,8 +1,8 @@
 window.onload = function(){
+  var servScroll = $('#services-scroll');
   var service = $('#service');
   var contact = $('#contact');
   var blurb = $('#blurb');
-  var servScroll = $('#services-scroll');
 
   var roomArr = ['Video Conferencing',
   'Digital Signage',
@@ -16,13 +16,14 @@ window.onload = function(){
   // needs a timer
   // needs an animation
   // look into CSS before writing script
-  //
+
   var roomRotate = function() {
     for (var i in roomArr) {
       console.log(roomArr[i]);
-      servScroll.innerHTML = roomArr[i];
+      // get this logic working and add a timer
+      servScroll.innerHTML = '<h3>' + roomArr[i] + '</h3>';
     }
-    roomRotate();
+    // roomRotate();
   };
 
   service.on('click', function(){

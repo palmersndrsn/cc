@@ -10,7 +10,7 @@ body {
 	height:300px;
 }
 @media (max-width: 1000px) {
-	.partners-header {
+	.services {
 		margin-top: 300px;
 	}
 }
