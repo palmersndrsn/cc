@@ -4,27 +4,19 @@ window.onload = function(){
   var contact = $('#contact');
   var blurb = $('#blurb');
 
-  var roomArr = ['Video Conferencing',
-  'Digital Signage',
-  'Video Wall',
-  'Sound Masking System',
-  'Training rooms',
-  'Auditorium',
-  'Huddle Rooms'];
+  // var roomArr = ['Video Conferencing',
+  // 'Digital Signage',
+  // 'Video Wall',
+  // 'Sound Masking System',
+  // 'Training rooms',
+  // 'Auditorium',
+  // 'Huddle Rooms'];
 
   // need to make a continous loop for roomArr
   // needs a timer
   // needs an animation
   // look into CSS before writing script
 
-  var roomRotate = function() {
-    for (var i in roomArr) {
-      console.log(roomArr[i]);
-      // get this logic working and add a timer
-      servScroll.innerHTML = '<h3>' + roomArr[i] + '</h3>';
-    }
-    // roomRotate();
-  };
 
   service.on('click', function(){
     $('html, body').animate({
@@ -41,5 +33,34 @@ window.onload = function(){
     return false;
   });
 
-  roomRotate();
+
+  $(function() {
+    $(".rslides").responsiveSlides({
+      auto: true,             // Boolean: Animate automatically, true or false
+      speed: 500,            // Integer: Speed of the transition, in milliseconds
+      timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+      pager: false,           // Boolean: Show pager, true or false
+      nav: false,             // Boolean: Show navigation, true or false
+      random: false,
+      namespace: "rslides",   // String: Change the default namespace used
+      before: function(){},   // Function: Before callback
+      after: function(){}
+    });
+  });
+
+  $(function() {
+    $(".rslides").responsiveSlides({
+      auto: true,             // Boolean: Animate automatically, true or false
+      speed: 500,            // Integer: Speed of the transition, in milliseconds
+      timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+      pager: false,           // Boolean: Show pager, true or false
+      nav: false,             // Boolean: Show navigation, true or false
+      random: false,
+      namespace: "rolltext",   // String: Change the default namespace used
+      before: function(){},   // Function: Before callback
+      after: function(){}
+    });
+  });
+
+
 };
