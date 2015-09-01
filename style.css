@@ -140,6 +140,11 @@ li {
 	-moz-transform: scale(.4); /* Firefox */
 	/*-moz-transform-origin: 0 0;*/
 }
+#solutions {
+	margin-bottom: 50px;
+	color: white;
+}
+
 .services {
 	text-align: center;
 	background-image: url(/*public/DSC_2257_sm.JPG*/);
@@ -151,7 +156,6 @@ li {
 	color: white;
 	padding-top: 150px;
 	padding-bottom: 50px;
-	display: inline-block;
 }
 .services-scroll {
 	color: rgb(0,186,242);
@@ -161,6 +165,18 @@ li {
 	color: white;
 	font-size: 20px;
 }
+
+.rooms {
+	display: inline-block;
+
+}
+
+#room-options {
+	color: orange;
+	margin-left: 5px;
+	margin-top: -30px;
+}
+
 .rslides {
   position: relative;
   list-style: none;
