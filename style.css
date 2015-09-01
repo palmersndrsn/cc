@@ -10,7 +10,7 @@ body {
 	height:300px;
 }
 @media (max-width: 1000px) {
-	.partners-header {
+	.services {
 		margin-top: 300px;
 	}
 }
@@ -19,7 +19,6 @@ body {
 }
 .about-header {
 	padding-top: 50px;
-	padding-bottom: 50px;
 	text-align: center;
 }
 .about-closing {
@@ -72,8 +71,11 @@ li {
 .navbar-default.transparent {
 	background-color: transparent;
 }
-.navbar li {
+/*.navbar li {
 	color: #000
+}*/
+.navbar-default .navbar-nav>li>a {
+  color: white !important;
 }
 .partners {
 	text-align: center;
@@ -90,20 +92,20 @@ li {
 	background-color: white;
 }
 .slide1, .slide2, .slide3 {
-  min-height: 700px;
+  min-height: 550px;
   background-size: cover;
   background-position: center center;
 }
 .slide1 {
-  background-image: url(public/DSC_2294.JPG);
+  background-image: url(public/DSC_2294_sm.JPG);
   opacity: .4;
 }
 .slide2 {
-  background-image: url(public/DSC_2283.JPG);
+  background-image: url(public/DSC_2283_sm.JPG);
   opacity: .4;
 }
 .slide3 {
-  background-image: url(public/DSC_2233.JPG);
+  background-image: url(public/DSC_2233_sm.JPG);
   opacity: .4;
 }
 /* Carousel Fade Effect */
@@ -138,8 +140,83 @@ li {
 	-moz-transform: scale(.4); /* Firefox */
 	/*-moz-transform-origin: 0 0;*/
 }
+#solutions {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: white;
+}
+
+/*.services {
+	text-align: center;
+	background-image: url(public/DSC_2257_sm.JPG);
+	background-size: cover;
+  background-position: center center;
+}*/
+.services-header {
+	/*color: rgb(0,186,242);*/
+	color: white;
+	padding-top: 150px;
+	padding-bottom: 50px;
+}
+/*.services-scroll {
+	color: rgb(0,186,242);
+	padding-bottom: 50px;
+}*/
 .tagline {
 	color: white;
+	font-size: 20px;
+}
+
+.rooms {
+	/*display: inline-block;*/
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.rooms-p {
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+
+#room-options {
+	color: orange;
+	margin-left: 5px;
+	margin-top: -30px;
+	font-style: underline;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
 ul {
 	text-align: center;
