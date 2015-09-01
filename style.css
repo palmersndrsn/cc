@@ -145,22 +145,22 @@ li {
 	color: white;
 }
 
-.services {
+/*.services {
 	text-align: center;
-	background-image: url(/*public/DSC_2257_sm.JPG*/);
+	background-image: url(public/DSC_2257_sm.JPG);
 	background-size: cover;
   background-position: center center;
-}
+}*/
 .services-header {
 	/*color: rgb(0,186,242);*/
 	color: white;
 	padding-top: 150px;
 	padding-bottom: 50px;
 }
-.services-scroll {
+/*.services-scroll {
 	color: rgb(0,186,242);
 	padding-bottom: 50px;
-}
+}*/
 .tagline {
 	color: white;
 	font-size: 20px;
@@ -168,7 +168,6 @@ li {
 
 .rooms {
 	display: inline-block;
-
 }
 
 #room-options {
