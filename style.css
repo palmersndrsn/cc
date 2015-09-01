@@ -141,7 +141,8 @@ li {
 	/*-moz-transform-origin: 0 0;*/
 }
 #solutions {
-	margin-bottom: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	color: white;
 }
 
@@ -167,13 +168,23 @@ li {
 }
 
 .rooms {
-	display: inline-block;
+	/*display: inline-block;*/
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.rooms-p {
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 35px;
 }
 
 #room-options {
 	color: orange;
 	margin-left: 5px;
 	margin-top: -30px;
+	font-style: underline;
 }
 
 .rslides {
