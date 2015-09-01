@@ -80,6 +80,7 @@ li {
 .partners {
 	text-align: center;
 	background-color: white;
+	margin-left: -20;
 }
 .partners-content {
 	text-align: center;
@@ -87,6 +88,11 @@ li {
 	padding-top: 50px;
 	background-color: white;
 }
+.partners>ul>li {
+margin-right: 30px
+}
+
+
 .partners-header{
 	padding-top: 50px;
 	background-color: white;
@@ -170,7 +176,7 @@ li {
 .rooms {
 	/*display: inline-block;*/
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom:
 }
 
 .rooms-p {
