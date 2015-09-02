@@ -9,21 +9,16 @@ body {
 	width:100%;
 	height:300px;
 }
-@media (max-width: 1000px) {
-	.services {
-		margin-top: 300px;
-	}
-}
+
 .about {
 	text-align: center;
+	padding-bottom: 50px;
 }
 .about-header {
 	padding-top: 50px;
 	text-align: center;
 }
-.about-closing {
-	padding-bottom: 50px;
-}
+
 body {
 	background-color: rgb(41,45,47);
 }
@@ -91,57 +86,21 @@ li {
 .partners>ul>li {
 margin-right: 30px
 }
-
-
 .partners-header{
 	padding-top: 50px;
 	background-color: white;
 }
-.slide1, .slide2, .slide3 {
-  min-height: 550px;
-  background-size: cover;
-  background-position: center center;
-}
-.slide1 {
-  background-image: url(public/DSC_2294_sm.JPG);
+#main-slides {
   opacity: .4;
 }
-.slide2 {
-  background-image: url(public/DSC_2283_sm.JPG);
-  opacity: .4;
-}
-.slide3 {
-  background-image: url(public/DSC_2233_sm.JPG);
-  opacity: .4;
-}
-/* Carousel Fade Effect */
-.carousel.carousel-fade .item {
-  -webkit-transition: opacity 1s linear;
-  -moz-transition: opacity 1s linear;
-  -ms-transition: opacity 1s linear;
-  -o-transition: opacity 1s linear;
-  transition: opacity 1s linear;
-  opacity: .5;
-}
-.carousel.carousel-fade .active.item {
-  opacity: 1;
-}
-.carousel.carousel-fade .active.left,
-.carousel.carousel-fade .active.right {
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.carousel-overlay {
-  position: absolute;
-  bottom: 100px;
-  right: 0;
-  left: 0;
-}
-.coitcom-logo {
+.main {
+	margin-top: -400px;
 	text-align: center;
-	top: -500px;
+}
+#coitcom-logo {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
 	zoom: .4;
 	-moz-transform: scale(.4); /* Firefox */
 	/*-moz-transform-origin: 0 0;*/
@@ -152,12 +111,6 @@ margin-right: 30px
 	color: white;
 }
 
-/*.services {
-	text-align: center;
-	background-image: url(public/DSC_2257_sm.JPG);
-	background-size: cover;
-  background-position: center center;
-}*/
 .services-header {
 	/*color: rgb(0,186,242);*/
 	color: white;
@@ -169,6 +122,7 @@ margin-right: 30px
 	padding-bottom: 50px;
 }*/
 .tagline {
+	text-align: center;
 	color: white;
 	font-size: 20px;
 }
@@ -227,4 +181,26 @@ margin-right: 30px
 ul {
 	text-align: center;
   list-style-type: none;
+}
+@media (max-width: 1000px) {
+	#coitcom-logo {
+		zoom: .2;
+		-moz-transform: scale(.2); /* Firefox */
+		/*-moz-transform-origin: 0 0;*/
+	}
+	b, strong {
+		color: white;
+	}
+	#services {
+		margin-top: 300px;
+	}
+	#small-device-fix {
+		padding: 500px;
+	}
+	.tagline {
+		font-size: 14px;
+	}
+	.main {
+		margin-top: -200px;
+	}
 }

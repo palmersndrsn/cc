@@ -23,9 +23,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="vendor/responsiveslides.min.js"></script>
 
-	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
 </head>
 <body>
 	<!--[if lte IE 9]>
@@ -57,50 +57,47 @@
       </div>
     </div>
 </nav>
-<!--end nav bar-->
-<!--begin bg-carousel-->
-<div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-<!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-        <div class="slide1"></div>
-    </div>
-    <div class="item">
-        <div class="slide2"></div>
-    </div>
-    <div class="item">
-        <div class="slide3"></div>
-    </div>
-  </div><!-- .carousel-inner -->
-  <div class="container carousel-overlay text-center">
-		<img class="coitcom-logo" src="public/coitcom-hi-res-AV-Integration-silicon-valley.png">
-		<!-- consider revising and font change -->
-    <h3 class="tagline">Simple, intuitive, cost efficient commercial Audio Video solutions for Silicon Valley</h3>
-  </div>
-</div><!-- .carousel -->
-<!--end bg-carousel-->
 
-<div id="blurb" class="container blurb">
+<div class="row">
+  <ul id="main-slides" class="rslides">
+    <!-- <li><img src="public/DSC_2294_sm.jpg" alt=""></li> -->
+    <li class="slides"><img src="public/DSC_2283_sm.jpg" alt=""></li>
+    <li class="slides"><img src="public/DSC_2233_sm.jpg" alt=""></li>
+
+  </ul>
+  <div class="col-md-2 col-xs-1"></div>
+  <div class="col-md-8 col-xs-10">
+    <div class="main">
+		  <img id="coitcom-logo" src="public/coitcom-hi-res-AV-Integration-silicon-valley.png">
+		<!-- consider revising and font change -->
+      <h3 class="tagline">Simple, intuitive, cost efficient commercial Audio Video solutions for Silicon Valley</h3>
+    </div>
+  </div>
+  <div class="col-md-2 col-xs-1"></div>
+</div>
+
+
+
+<div class="container blurb">
   <div class="row">
-  	<div class="col-md-2 col-xs-0"></div>
-    <div class="col-md-8 col-xs-12">
+  	<div class="col-md-2 col-xs-1"></div>
+    <div class="col-md-8 col-xs-10">
     	<h3 class="about-header">Communication is Key</h3>
       <p class="about">CoitCom has over 30 years of experience assisting companies use innovative audio video solutions to directly communicate with employees, clients and partners.</p>
-      <p class="about-closing"></p>
     </div><!--/.col -->
-  	<div class="col-md-2 col-xs-0"></div>
+  	<div class="col-md-2 col-xs-1"></div>
 
   </div><!--/.row -->
 </div><!--/.container -->
 <!-- location-contact -->
 <div id="loc" class="row location-row">
-  <div class="col-md-1 col-xs-0"></div>
-  <div class="col-md-4 col-xs-12 location">
+  <div class="col-md-1 col-xs-1"></div>
+  <div class="col-md-4 col-xs-10 location">
   	<h3 class="location-header">Located in the heart of Silicon Valley </h3>
   	<p>Silicon Valley has shaped the future of our world and CoitCom is very proud to be an intricate partner in keeping Silicon Valley at the forefront of innovation and change</p>
   	<p>2487 Spring St, Redwood City, California | (650) 306-2500</p>
   </div>
-  <div class="col-md-1 col-xs-0"></div>
+  <div class="col-md-1 col-xs-1"></div>
 	<div class="col-md-6 col-xs-12">
 		<div style="width:96%" id='map'></div>
   </div><!--/.col -->
@@ -110,16 +107,16 @@
   <div class="col-md-12 col-xs-12">
 
     <ul class="rslides">
-      <li><img src="public/DSC_2257_sm.JPG" alt=""></li>
-      <li><img src="public/DSC_2294_sm.JPG" alt=""></li>
+      <li><img src="public/DSC_2257_sm.jpg" alt=""></li>
+      <li><img src="public/DSC_2294_sm.jpg" alt=""></li>
       <li><img src="public/IMG_4073.jpg" alt=""></li>
       <li><img src="public/IMG_4074.jpg" alt""></li>
     </ul>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-3 col-xs-0"></div>
-  <div class="col-md-6 col-xs-12">
+  <div class="col-md-3 col-xs-1"></div>
+  <div class="col-md-6 col-xs-10">
     <div class="rooms">
       <h3 id="solutions">Brilliant solutions for your company's</h3>
     </div>
@@ -145,7 +142,7 @@
     </div>
     <div class="col-md-2 col-xs-0"></div> -->
     </div>
-  <div class="col-md-3 col-xs-0"></div>
+  <div class="col-md-3 col-xs-1"></div>
 </div>
 <!-- partners -->
 <div class="row partners-header">
@@ -217,33 +214,32 @@
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiY29pdGNvbSIsImEiOiJoMlhwdEtBIn0.KRDHgqHY_S-RtmxTOjkVTw';
-var map = L.mapbox.map('map', 'examples.map-20v6611k')
-    .setView([37.487233, -122.225337], 9);
-    		map.dragging.disable();
-        map.scrollWheelZoom.disable();
-    		if (map.tap) map.tap.disable();
-
-L.mapbox.featureLayer({
-    // this feature is in the GeoJSON format: see geojson.org
-    // for the full specification
-    type: 'Feature',
-    geometry: {
-        type: 'Point',
-        // coordinates here are in longitude, latitude order because
-        // x, y is the standard for GeoJSON and many formats
-        coordinates: [
-          -122.20574490000001,
-          37.4757152
-        ]
-    },
-    properties: {
-        title: 'CoitCom',
-        description: '2487 Spring St, Redwood City, CA 94063, USA',
-        // one can customize markers by adding simplestyle properties
-        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
-        'marker-size': 'large',
-        'marker-color': '00BAF2'
-        // 'marker-symbol': 'cafe'
+  var map = L.mapbox.map('map', 'mapbox.streets')
+      .setView([37.4832504963631, -122.211063301355], 9);
+          map.dragging.disable();
+          map.scrollWheelZoom.disable();
+          if (map.tap) map.tap.disable();
+  L.mapbox.featureLayer({
+      // this feature is in the GeoJSON format: see geojson.org
+      // for the full specification
+      type: 'Feature',
+      geometry: {
+          type: 'Point',
+          // coordinates here are in longitude, latitude order because
+          // x, y is the standard for GeoJSON and many formats
+          coordinates: [
+            -122.211063301355,
+            37.4832504963631
+          ]
+      },
+      properties: {
+          title: 'CoitCom',
+          description: '2487 Spring St, Redwood City, CA 94063, USA',
+          // one can customize markers by adding simplestyle properties
+          // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+          'marker-size': 'large',
+          'marker-color': '00BAF2'
+          // 'marker-symbol': 'cafe'
     }
 }).addTo(map);
 </script>
