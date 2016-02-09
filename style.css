@@ -48,7 +48,7 @@ li {
 }
 .location {
 	background-color: rgb(206,206,206);
-	min-height: 300px;
+	min-height: 350px;
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -99,7 +99,7 @@ margin-right: 30px
   opacity: .4;
 }
 .main {
-	position: absolute;
+	/*opeposition: absolute;*/
 	margin-top: -400px;
 	text-align: center;
 }
@@ -209,5 +209,9 @@ ul {
 	}
 	.main {
 		margin-top: -110px;
+	}
+	.mapbox-logo.leaflet-control.mapbox-logo-true {
+		opacity: 0;
+		;
 	}
 }
