@@ -48,7 +48,7 @@ li {
 }
 .location {
 	background-color: rgb(206,206,206);
-	min-height: 350px;
+	height: 350px;
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 40px;
