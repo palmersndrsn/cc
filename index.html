@@ -19,10 +19,13 @@
 	<meta charset="UTF-8">
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css">
-
+  <!-- parallax  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="vendor/parallax.min.js"></script>
+  <!-- image rotate -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="vendor/responsiveslides.min.js"></script>
-
+  <!-- mapbox -->
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
   <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
@@ -54,7 +57,7 @@
     </div>
 </nav>
 
-<div class="row">
+<div class="row slides-row">
   <ul id="main-slides" class="rslides">
     <!-- <li><img src="public/DSC_2294_sm.jpg" alt=""></li> -->
     <li class="slides"><img src="public/DSC_2283_sm.jpg" alt=""></li>
@@ -75,48 +78,35 @@
 
 
 <div class="container blurb">
-  <div class="row">
-  	<div class="col-md-2 col-xs-1"></div>
-    <div class="col-md-8 col-xs-10">
-    	<h3 class="about-header">Communication is Key</h3>
+  <div class="row ">
+  	<div class="col-md-1 col-xs-1"></div>
+    <div class="col-md-10 col-xs-10">
+      <h3 class="about-header">Communication is Key</h3>
       <p class="about">You have the opportunity for vibrant communication every time someone walks through your lobby and hallways or sits down for a meeting, video conference call or presentation. CoitCom’s audio video systems allow you to capture and maximize each of these opportunities to share your message. </p>
       <p class="about">If the far end of the table cannot see your presentation or the other end of the conference call cannot understand your teams proposal, you’ve missed an opportunity. Let CoitCom’s team help you install and integrate a simple, intuitive and cost efficient audio video solution that is crystal clear.</p>
     </div><!--/.col -->
-  	<div class="col-md-2 col-xs-1"></div>
+    <div class="col-md-1 col-xs-1"></div>
 
   </div><!--/.row -->
 </div><!--/.container -->
 <!-- location-contact -->
-<div id="loc" class="row location-row">
-  <div class="col-md-1 col-xs-1"></div>
-  <div class="col-md-4 col-xs-10 location">
-  	<h3 class="location-header">Located in the heart of Silicon Valley </h3>
-  	<p>Silicon Valley has shaped the future of our world and CoitCom is very proud to be an intricate partner in keeping Silicon Valley at the forefront of innovation and change</p>
-  	<p >2487 Spring St, Redwood City, California</p> <p class="location-footer">(650) 306-2500 | <a href="mailto:info@coitcom.com" target="_top">info@coitcom.com</a></p>
-  </div>
-  <div class="col-md-1 col-xs-1"></div>
-	<div class="col-md-6 col-xs-12">
-		<div style="width:96%" id='map'></div>
-  </div><!--/.col -->
-</div><!--/.row -->
+    <div id="image-parallax" class="parallax-window" data-parallax="scroll" data-image-src="public/DSC_2294_sm.jpg"></div>
+
 <!-- Services -->
 <div id="services" class="row services">
-  <div class="col-md-12 col-xs-12">
+  <div class="col-md-6 col-xs-12">
+
 
     <ul class="rslides">
-      <li><img src="public/DSC_2257_sm.jpg" alt=""></li>
-      <li><img src="public/DSC_2294_sm.jpg" alt=""></li>
-      <li><img src="public/IMG_4073.jpg" alt=""></li>
-      <li><img src="public/IMG_4074.jpg" alt""></li>
+      <li><img src="public/DSC_2233_sm.jpg" alt=""></li>
+      <li><img src="public/DSC_2283_sm.jpg" alt=""></li>
+<!--       <li><img src="public/IMG_4073.jpg" alt=""></li>
+      <li><img src="public/IMG_4074.jpg" alt""></li> -->
     </ul>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-3 col-xs-1"></div>
-  <div class="col-md-6 col-xs-10">
-    <div class="rooms">
-      <h3 id="solutions">Brilliant solutions for your company's</h3>
-    </div>
+  <div class="col-md-6 col-xs-12 rooms">
+    <h3 id="solutions">Brilliant solutions for your company</h3>
+
     <div class="rooms">
       <ul id="room-options" class="rslides">
         <li><h3>Video Conferencing</h3></li>
@@ -128,33 +118,173 @@
         <li><h3>Huddle Rooms</h3></li>
       </ul>
     </div>
-    <div>
-     <!--  <p class="rooms-p">You have the opportunity for vibrant communication every time someone walks through your lobby and hallways or sits down for a meeting, video conference call or presentation. CoitCom’s audio video systems allow you to capture and maximize each of these opportunities to share your message.</p>
-    </div>
-    <div>
-      <p class="rooms-p">If the far end of the table cannot see your presentation or the other end of the conference call cannot understand your teams proposal, you’ve missed an opportunity.  Let CoitCom’s team help you install and integrate a simple, intuitive and cost efficient audio video solution that is crystal clear.</p> -->
-    </div>
-<!-- 	<div class="col-md-2 col-xs-0"></div>
-    <div class="col-md-8 col-xs-12">
-    </div>
-    <div class="col-md-2 col-xs-0"></div> -->
-    </div>
-  <div class="col-md-3 col-xs-1"></div>
+  </div>
 </div>
 <!-- partners -->
-<div class="row partners-header">
-  <div class="col-md-3 col-xs-1"></div>
-	<div class="col-md-6 col-xs-10 partners">
-		<h3 >Partners</h3>
-		<p>CoitCom offers the industry’s top brands, to deliver cutting-edge integrated solutions for video, audio, lighting control, content management, video conferencing, networking, and digital signage; plus whole home and business automation.</p>
-	</div>
-	<div class="col-md-3 col-xs-1"></div>
+
+
+<div class="container">
+  <div class="col-md-12 partners">
+    <h3 class="partners-header">Partners</h3>
+    <p class="partners-content">CoitCom partners with the industry’s top brands, to deliver cutting-edge integrated solutions for video, audio, lighting control, content management, video conferencing, networking, and digital signage; plus whole home and business automation.</p>
+
+    <div class="well">
+      <div id="myCarousel" class="carousel slide">
+
+              <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://www.amx.com/" class="thumbnail"><img src="logos/amx.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="https://www.audinate.com/" class="thumbnail"><img src="logos/audinate.jpeg" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.bowers-wilkins.com/" class="thumbnail"><img src="logos/bandw.jpeg" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="https://www.belden.com/" class="thumbnail"><img src="logos/belden.jpg" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://www.biamp.com/default.aspx" class="thumbnail"><img src="logos/biamp.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="https://www.blackmagicdesign.com/" class="thumbnail"><img src="logos/blackmagic.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.brightsign.biz/" class="thumbnail"><img src="logos/brightsign.jpg" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.chiefmfg.com/" class="thumbnail"><img src="logos/chief.jpg" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://www.cisco.com/" class="thumbnail"><img src="logos/cisco.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.clearone.com/" class="thumbnail"><img src="logos/clearone.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.crestron.com/" class="thumbnail"><img src="logos/crestron.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.crownaudio.com/en-US" class="thumbnail"><img src="logos/crown.gif" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://www.denon.com/pages/home.aspx" class="thumbnail"><img src="logos/denon.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.epson.com/" class="thumbnail"><img src="logos/epson.gif" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.extron.com/" class="thumbnail"><img src="logos/extron.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.harmanaudio.com/" class="thumbnail"><img src="logos/harman.jpg" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://www.jbl.com/" class="thumbnail"><img src="logos/jbl.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.lencore.com/" class="thumbnail"><img src="logos/lencore.jpg" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.lutron.com/en-US/Pages/default.aspx/" class="thumbnail"><img src="logos/lutron.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.middleatlantic.com/" class="thumbnail"><img src="logos/middleatlantic.png" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://www.panamax.com/" class="thumbnail"><img src="logos/panamax.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://shop.panasonic.com/" class="thumbnail"><img src="logos/panasonic.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.planar.com/" class="thumbnail"><img src="logos/planar.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://qsc.com" class="thumbnail"><img src="logos/qsc.png" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://www.rane.com/" class="thumbnail"><img src="logos/rane" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.rgb.com/" class="thumbnail"><img src="logos/rgb_spectrum.jpg" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.sanus.com/en_US/" class="thumbnail"><img src="logos/sanus.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.sharpusa.com/" class="thumbnail"><img src="logos/sharp.png" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://www.shure.com/" class="thumbnail"><img src="logos/shure.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.sonos.com/" class="thumbnail"><img src="logos/sonos.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.sony.com/" class="thumbnail"><img src="logos/sony.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.starleaf.com/" class="thumbnail"><img src="logos/starleaf.png" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="http://stealthacoustics.com/" class="thumbnail"><img src="logos/stealthacoustics.jpg" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.surgex.com/" class="thumbnail"><img src="logos/surgex.jpg" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.universalremote.com/" class="thumbnail"><img src="logos/urc.png" alt="Image" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-3"><a href="http://www.vaddio.com/" class="thumbnail"><img src="logos/vaddio.png" alt="Image" class="img-responsive"></a>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/item-->
+
+
+
+
+        </div>
+    <!--/carousel-inner-->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+      </div>
+            <!--/myCarousel-->
+    </div>
+        <!--/well-->
+  </div>
 </div>
-<div class="row partners-content">
-	<div class="col-md-3 col-xs-0"></div>
-	<div class="col-md-2 col-xs-4 partners">
+
+
+
+
+</div>
+ <!--  <div class="col-md-3 col-xs-0"></div>
+  <div class="col-md-2 col-xs-4 partners">
+
 		<ul>
-			<li><a href="http://www.amx.com/">AMX</a></li>
+      <li><a href="http://www.amx.com/">AMX</a></li>
+      <li><a href="https://www.audinate.com/">Audinate</a></li>
       <li><a href="https://www.belden.com/">Belden</a></li>
       <li><a href="http://www.bowers-wilkins.com/">B&W</a></li>
       <li><a href="http://www.biamp.com/default.aspx">Biamp</a></li>
@@ -165,7 +295,6 @@
       <li><a href="http://www.clearone.com/">ClearOne</a></li>
       <li><a href="http://www.crestron.com/">Crestron</a></li>
       <li><a href="http://www.crownaudio.com/en-US">Crown</a></li>
-      <li><a href="https://www.audinate.com/">Dante</a></li>
     </ul>
   </div>
   <div class="col-md-2 col-xs-4 partners">
@@ -201,10 +330,24 @@
     </ul>
   </div>
   <div class="col-md-3 col-xs-0"></div>
-</div>
+</div> -->
+
+<div class="row location-row">
+  <div class="col-md-1 col-xs-1"></div>
+  <div class="col-md-4 col-xs-10 location">
+    <h3 class="location-header">Located in the heart of Silicon Valley </h3>
+    <p>Silicon Valley has shaped the future of our world and CoitCom is very proud to be an intricate partner in keeping Silicon Valley at the forefront of innovation and change</p>
+    <!-- <p >2487 Spring St, Redwood City, California</p> <p class="location-footer">(650) 306-2500 | <a href="mailto:info@coitcom.com" target="_top">info@coitcom.com</a></p> -->
+  </div>
+  <div class="col-md-1 col-xs-1"></div>
+  <div class="col-md-6 col-xs-12">
+    <div id='map'></div>
+  </div><!--/.col -->
+</div><!--/.row -->
+
 <div class="row">
-	<div class="col-md-12">
-		<p class="foot">Coitcom Inc.   |     2487 Spring St, Redwood City, California    |     (650) 306-2500 | <a href="mailto:info@coitcom.com" target="_top">info@coitcom.com</a> </p>
+	<div id="loc" class="col-md-12">
+		<p class="foot">CoitCom Inc.   |     2487 Spring St, Redwood City, California    |     <a href="tel:+16503062500">(650) 306-2500 | <a href="mailto:info@coitcom.com" target="_top">info@coitcom.com</a> </p>
 	</div>
 </div>
 
@@ -212,7 +355,7 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiY29pdGNvbSIsImEiOiJoMlhwdEtBIn0.KRDHgqHY_S-RtmxTOjkVTw';
   var map = L.mapbox.map('map', 'mapbox.streets')
-      .setView([37.4832504963631, -122.211063301355], 9);
+      .setView([37.4832504963631, -122.211063301355],10 );
           map.dragging.disable();
           map.scrollWheelZoom.disable();
           if (map.tap) map.tap.disable();
