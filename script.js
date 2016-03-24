@@ -48,19 +48,12 @@ window.onload = function(){
     });
   });
 
-  $(function() {
-    $(".rslides").responsiveSlides({
-      auto: true,             // Boolean: Animate automatically, true or false
-      speed: 500,            // Integer: Speed of the transition, in milliseconds
-      timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-      pager: false,           // Boolean: Show pager, true or false
-      nav: false,             // Boolean: Show navigation, true or false
-      random: false,
-      namespace: "rolltext",   // String: Change the default namespace used
-      before: function(){},   // Function: Before callback
-      after: function(){}
-    });
-  });
-
+  // $(document).ready(function(){
+  //   $('#slider').bxSlider({
+  //   ticker: true,
+  //   tickerSpeed: 5000,
+  //   tickerHover: true
+  //   });
+  // });
 
 };
