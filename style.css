@@ -4,35 +4,20 @@ body {
 }
 .about {
 	text-align: center;
-	padding-bottom: 50px;
+	padding-bottom: 5%;
 }
 .about-header {
 	color: orange;
-	padding-top: 50px;
 	text-align: center;
-	padding-bottom: 50px;
+	padding: 5%;
 }
 
 body {
 
 }
-.blurb {
-	text-align: center;
-	color: black;
-	background: white;
-}
-.blurb-row {
-	color: black;
-	background: white;
-}
 element.style {
 }
-/*.carousel-control.left {
- background-image: none;
-}
-.carousel-control.right {
- background-image: none;
-}*/
+
 .contact {
 	color: white !important;
 }
@@ -57,7 +42,7 @@ h3 {
 	font-size: 26px;
 }
 #image-parallax {
-	height: 300px;
+	height: 350px;
 }
 p {
 	font-size: 18px;
@@ -67,15 +52,14 @@ li {
 }
 .location {
 	background-color: rgb(206,206,206);
-	height: 400px;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 .location-header {
 	color: white;
-	margin-top: 50px;
-	margin-bottom:40px;
+	margin-top: 5%;
+	margin-bottom:5%;
 
 }
 .location-row {
@@ -120,14 +104,13 @@ li {
 margin-right: 30px
 }
 .partners-content {
-	padding-bottom: 50px;
+	padding-bottom: 5%;
 }
 .partners-header{
-	padding: 50px;
+	padding: 5%;
 }
 #solutions {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 5%;
 }
 #services {
 	text-align: center;
@@ -146,20 +129,31 @@ margin-right: 30px
 .tagline {
 	text-align: center;
 	color: white;
+	margin-top: 15px;
 	font-size: 20px;
 }
+.tagline-info {
+	color: white ;
+	margin-top: 30px;
+}
+.tagline-info a{
+	color:white;
+}
+.rooms {
+	text-align: center;
+	margin-top: 20%;
+	margin-bottom: 1%;
+	height: 450px;
+}
+
 .rooms-p {
 	color: white;
-	text-align: center;
-	margin-top: 15px;
-	margin-bottom: 35px;
 }
 
 #room-options {
 	/*margin-left: 5px;*/
 	color: white;
-	margin-top: -30px;
-	padding-bottom:50px;
+	/*margin-top: -30px;*/
 	font-style: underline;
 	/*padding-bottom: 30px;*/
 }
@@ -220,10 +214,6 @@ ul {
 		background-color: rgb(41,45,47);
 	}
 
-	#services {
-		margin-top: 300px;
-	}
-
 	.tagline {
 		font-size: 14px;
 		margin-top: -5px;
@@ -234,5 +224,8 @@ ul {
 	.mapbox-logo.leaflet-control.mapbox-logo-true {
 		opacity: 0;
 		;
+	}
+	.rooms {
+		height:450px;
 	}
 }
