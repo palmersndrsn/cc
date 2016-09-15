@@ -2,62 +2,83 @@ body {
 	margin:0;
 	padding:0;
 }
-#map {
-	position:absolute;
-	top:0;
-	bottom:0;
-	width:100%;
-	height:300px;
-}
-@media (max-width: 1000px) {
-	.services {
-		margin-top: 300px;
-	}
-}
 .about {
 	text-align: center;
+	padding-bottom: 5%;
 }
 .about-header {
-	padding-top: 50px;
+	color: orange;
 	text-align: center;
+	padding: 5%;
 }
-.about-closing {
-	padding-bottom: 50px;
-}
+
 body {
-	background-color: rgb(41,45,47);
+
 }
-.blurb {
-	text-align: center;
-	color: white;
+element.style {
 }
+
 .contact {
 	color: white !important;
 }
+#coitcom-logo {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	zoom: .4;
+	-moz-transform: scale(.4); /* Firefox */
+	/*-moz-transform-origin: 0 0;*/
+}
 .foot {
-	color: white;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	background-color: rgb(41,45,47);
+	color: white;
+
 }
 h3 {
 	letter-spacing: 3px;
+	font-size: 26px;
+}
+#image-parallax {
+	height: 350px;
+}
+p {
+	font-size: 18px;
 }
 li {
 	text-align: center;
 }
 .location {
 	background-color: rgb(206,206,206);
-	height: 300px;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 .location-header {
 	color: white;
+	margin-top: 5%;
+	margin-bottom:5%;
+
 }
 .location-row {
 	background-color: rgb(206,206,206);
+}
+#main-slides {
+  opacity: .5;
+  background-color: black;
+}
+.main {
+	/*opeposition: absolute;*/
+	margin-top: -400px;
+	text-align: center;
+}
+#map {
+	top:0;
+	bottom:0;
+	width:100%;
+	height:400px;
 }
 .navbar {
   position: absolute;
@@ -71,120 +92,70 @@ li {
 .navbar-default.transparent {
 	background-color: transparent;
 }
-/*.navbar li {
-	color: #000
-}*/
 .navbar-default .navbar-nav>li>a {
   color: white !important;
 }
 .partners {
 	text-align: center;
 	background-color: white;
+	margin-left: -20;
+}
+.partners>ul>li {
+margin-right: 30px
 }
 .partners-content {
-	text-align: center;
-	padding-bottom: 50px;
-	padding-top: 50px;
-	background-color: white;
+	padding-bottom: 5%;
 }
 .partners-header{
-	padding-top: 50px;
-	background-color: white;
-}
-.slide1, .slide2, .slide3 {
-  min-height: 550px;
-  background-size: cover;
-  background-position: center center;
-}
-.slide1 {
-  background-image: url(public/DSC_2294_sm.JPG);
-  opacity: .4;
-}
-.slide2 {
-  background-image: url(public/DSC_2283_sm.JPG);
-  opacity: .4;
-}
-.slide3 {
-  background-image: url(public/DSC_2233_sm.JPG);
-  opacity: .4;
-}
-/* Carousel Fade Effect */
-.carousel.carousel-fade .item {
-  -webkit-transition: opacity 1s linear;
-  -moz-transition: opacity 1s linear;
-  -ms-transition: opacity 1s linear;
-  -o-transition: opacity 1s linear;
-  transition: opacity 1s linear;
-  opacity: .5;
-}
-.carousel.carousel-fade .active.item {
-  opacity: 1;
-}
-.carousel.carousel-fade .active.left,
-.carousel.carousel-fade .active.right {
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.carousel-overlay {
-  position: absolute;
-  bottom: 100px;
-  right: 0;
-  left: 0;
-}
-.coitcom-logo {
-	text-align: center;
-	top: -500px;
-	zoom: .4;
-	-moz-transform: scale(.4); /* Firefox */
-	/*-moz-transform-origin: 0 0;*/
+	padding: 5%;
 }
 #solutions {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	color: white;
+	margin-bottom: 5%;
+}
+#services {
+	text-align: center;
+	background-color: rgb(248,148,6);
 }
 
-/*.services {
-	text-align: center;
-	background-image: url(public/DSC_2257_sm.JPG);
-	background-size: cover;
-  background-position: center center;
-}*/
 .services-header {
 	/*color: rgb(0,186,242);*/
 	color: white;
 	padding-top: 150px;
 	padding-bottom: 50px;
 }
-/*.services-scroll {
-	color: rgb(0,186,242);
-	padding-bottom: 50px;
-}*/
+.slides-row {
+	background-color: black;
+}
 .tagline {
+	text-align: center;
 	color: white;
+	margin-top: 15px;
 	font-size: 20px;
 }
-
+.tagline-info {
+	color: white ;
+	margin-top: 30px;
+}
+.tagline-info a{
+	color:white;
+}
 .rooms {
-	/*display: inline-block;*/
 	text-align: center;
-	margin-bottom: 30px;
+	margin-top: 20%;
+	margin-bottom: 1%;
+	height: 450px;
 }
 
 .rooms-p {
 	color: white;
-	text-align: center;
-	margin-top: 15px;
-	margin-bottom: 35px;
 }
 
 #room-options {
-	color: orange;
-	margin-left: 5px;
-	margin-top: -30px;
+	/*margin-left: 5px;*/
+	color: white;
+	/*margin-top: -30px;*/
 	font-style: underline;
+	/*padding-bottom: 30px;*/
 }
 
 .rslides {
@@ -221,4 +192,40 @@ li {
 ul {
 	text-align: center;
   list-style-type: none;
+}
+.well {
+	background-image: none;
+	background-color: white;
+	border-style: none;
+}
+@media (max-width: 1000px) {
+	.bx-window{
+		width:400;
+	}
+	#coitcom-logo {
+		zoom: .2;
+		-moz-transform: scale(.2); /* Firefox */
+		/*-moz-transform-origin: 0 0;*/
+	}
+	b, strong {
+		color: white;
+	}
+	.slides-row {
+		background-color: rgb(41,45,47);
+	}
+
+	.tagline {
+		font-size: 14px;
+		margin-top: -5px;
+	}
+	.main {
+		margin-top: -110px;
+	}
+	.mapbox-logo.leaflet-control.mapbox-logo-true {
+		opacity: 0;
+		;
+	}
+	.rooms {
+		height:450px;
+	}
 }
