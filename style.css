@@ -1,32 +1,26 @@
 body {
 	margin:0;
 	padding:0;
+	font-family: helvetica neue;
 }
 .about {
 	text-align: center;
-	padding-bottom: 5%;
-}
-.about-header {
-	color: orange;
-	text-align: center;
 	padding: 5%;
 }
-
-body {
-
-}
 element.style {
-}
-
-.contact {
-	color: white !important;
 }
 #coitcom-logo {
 	text-align: center;
 	margin: 0 auto;
 	display: block;
-	zoom: .4;
-	-moz-transform: scale(.4); /* Firefox */
+	zoom: .1;
+	-moz-transform: scale(.1); /* Firefox */
+	/*-moz-transform-origin: 0 0;*/
+}
+#coitcom-logo-black {
+	margin-top: 250px;
+	zoom: .03;
+	-moz-transform: scale(.03); /* Firefox */
 	/*-moz-transform-origin: 0 0;*/
 }
 .foot {
@@ -36,16 +30,6 @@ element.style {
 	background-color: rgb(41,45,47);
 	color: white;
 
-}
-h3 {
-	letter-spacing: 3px;
-	font-size: 26px;
-}
-#image-parallax {
-	height: 350px;
-}
-p {
-	font-size: 18px;
 }
 li {
 	text-align: center;
@@ -68,11 +52,16 @@ li {
 #main-slides {
   opacity: .5;
   background-color: black;
+  overflow: hidden;
+  z-index: 0;
 }
 .main {
-	/*opeposition: absolute;*/
-	margin-top: -400px;
-	text-align: center;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+  right: 0;
+  margin: 0 auto;
+	margin-top: -300px;
 }
 #map {
 	top:0;
@@ -81,50 +70,37 @@ li {
 	height:400px;
 }
 .navbar {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
-	background: transparent;
+  background-color: white;
+	background: white;
 	border-color: transparent;
 }
 .navbar-default.transparent {
 	background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a {
-  color: white !important;
+  color: black !important;
+  font-family: helvetica-bold;
 }
 .partners {
 	text-align: center;
-	background-color: white;
-	margin-left: -20;
 }
-.partners>ul>li {
-margin-right: 30px
-}
-.partners-content {
-	padding-bottom: 5%;
-}
-.partners-header{
-	padding: 5%;
-}
+
 #solutions {
 	margin-bottom: 5%;
 }
-#services {
+.services {
 	text-align: center;
-	background-color: rgb(248,148,6);
 }
-
-.services-header {
-	/*color: rgb(0,186,242);*/
-	color: white;
-	padding-top: 150px;
-	padding-bottom: 50px;
+.services-p {
+	text-align: left;
+	font-size: 16px;
 }
 .slides-row {
 	background-color: black;
+
 }
 .tagline {
 	text-align: center;
@@ -157,7 +133,7 @@ margin-right: 30px
 	font-style: underline;
 	/*padding-bottom: 30px;*/
 }
-
+/*RSLIDES*/
 .rslides {
   position: relative;
   list-style: none;
@@ -189,6 +165,12 @@ margin-right: 30px
   width: 100%;
   border: 0;
 }
+.services-imgs {
+	overflow: hidden;
+	width: 100%;
+	/*zoom: .6;
+		-moz-transform: scale(.6); /* Firefox */
+}
 ul {
 	text-align: center;
   list-style-type: none;
@@ -198,13 +180,14 @@ ul {
 	background-color: white;
 	border-style: none;
 }
-@media (max-width: 1000px) {
+/*RSLIDES END*/
+@media (max-width: 900px) {
 	.bx-window{
 		width:400;
 	}
 	#coitcom-logo {
-		zoom: .2;
-		-moz-transform: scale(.2); /* Firefox */
+		zoom: .05;
+		-moz-transform: scale(.05); /* Firefox */
 		/*-moz-transform-origin: 0 0;*/
 	}
 	b, strong {
@@ -215,8 +198,7 @@ ul {
 	}
 
 	.tagline {
-		font-size: 14px;
-		margin-top: -5px;
+		font-size: 12px;
 	}
 	.main {
 		margin-top: -110px;
