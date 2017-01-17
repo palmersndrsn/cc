@@ -2,6 +2,7 @@ window.onload = function(){
   var servScroll = $('#services-scroll');
   var service = $('#service');
   var contact = $('#contact');
+  var home = $('#coitcom-logo-black');
   var blurb = $('#blurb');
 
   // var roomArr = ['Video Conferencing',
@@ -29,6 +30,13 @@ window.onload = function(){
   contact.on('click', function(){
     $('html, body').animate({
         scrollTop: $("#loc").offset().top
+    }, 1000);
+    return false;
+  });
+
+    home.on('click', function(){
+    $('html, body').animate({
+        scrollTop: $("body").offset().top
     }, 1000);
     return false;
   });
