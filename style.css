@@ -42,6 +42,10 @@ p {
 	color: white;
 
 }
+.img-responsive {
+	display: inline-block;
+	width: 15%;
+}
 li {
 	text-align: center;
 }
@@ -98,9 +102,12 @@ li {
 	margin-bottom:5%;
 }
 .partners-content {
-	margin-bottom:5%;
+	margin: 5%;
 }
-
+.partners-links {
+	display:inline-block;
+	text-align: center;
+}
 .tagline {
 	text-align: center;
 	color: white;
@@ -168,13 +175,7 @@ li {
 	margin-bottom: 5%;
 }
 .services {
-	color: white;
-	background-color: rgb(41,45,47);
-	padding: 5%;
-}
-.services-header{
-	color: white;
-	/*padding: 5%;*/
+/*	padding: 5%;*/
 }
 .services-p {
 	text-align: left;
@@ -183,15 +184,17 @@ li {
 }
 .services-img-label {
 	text-align: left;
-	color: white;
 	margin-top: 5%;
-}
-.slides-row {
-	background-color: black;
 }
 .services-imgs {
 	overflow: hidden;
 	width: 100%;
+}
+.services-main {
+	padding: 5%;
+}
+.slides-row {
+	background-color: black;
 }
 ul {
 	text-align: center;
