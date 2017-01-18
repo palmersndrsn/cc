@@ -1,13 +1,24 @@
-body {
-	margin:0;
-	padding:0;
-	font-family: helvetica neue;
-}
 .about {
-	text-align: center;
+	text-align: left;
 	padding: 5%;
 }
-element.style {
+h1, h2, h3, h4, h5 {
+	/*font-family: helvetica-bold;*/
+	line-height: 1.2;
+	font-family: "Neue Helvetica W02","Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-weight: 700;*/
+  font-style: normal;
+  /*color: #222;*/
+  margin-top: 0;
+  margin-bottom: .8rem;
+}
+p {
+	font-family: helvetica neue;
+	letter-spacing: -0.02em;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
 }
 #coitcom-logo {
 	text-align: center;
@@ -31,12 +42,16 @@ element.style {
 	color: white;
 
 }
+.img-responsive {
+	display: inline-block;
+	width: 15%;
+}
 li {
 	text-align: center;
 }
 .location {
 	background-color: rgb(206,206,206);
-	text-align: center;
+	text-align: left;
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
@@ -70,9 +85,6 @@ li {
 	height:400px;
 }
 .navbar {
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: white;
 	background: white;
 	border-color: transparent;
@@ -85,28 +97,22 @@ li {
   font-family: helvetica-bold;
 }
 .partners {
-	text-align: center;
-}
-
-#solutions {
-	margin-bottom: 5%;
-}
-.services {
-	text-align: center;
-}
-.services-p {
 	text-align: left;
-	font-size: 16px;
+	margin-top: 5%;
+	margin-bottom:5%;
 }
-.slides-row {
-	background-color: black;
-
+.partners-content {
+	margin: 5%;
+}
+.partners-links {
+	display:inline-block;
+	text-align: center;
 }
 .tagline {
 	text-align: center;
 	color: white;
 	margin-top: 15px;
-	font-size: 20px;
+	font-size: 30px;
 }
 .tagline-info {
 	color: white ;
@@ -165,11 +171,30 @@ li {
   width: 100%;
   border: 0;
 }
+#solutions {
+	margin-bottom: 5%;
+}
+.services {
+/*	padding: 5%;*/
+}
+.services-p {
+	text-align: left;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.services-img-label {
+	text-align: left;
+	margin-top: 5%;
+}
 .services-imgs {
 	overflow: hidden;
 	width: 100%;
-	/*zoom: .6;
-		-moz-transform: scale(.6); /* Firefox */
+}
+.services-main {
+	padding: 5%;
+}
+.slides-row {
+	background-color: black;
 }
 ul {
 	text-align: center;
