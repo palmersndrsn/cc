@@ -5,7 +5,7 @@
 h1, h2, h3, h4, h5 {
 	/*font-family: helvetica-bold;*/
 	line-height: 1.2;
-	font-family: "Neue Helvetica W02","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Neue Helvetica W02","Helvetica Neue",Helvetica,Arial;
   /*font-weight: 700;*/
   font-style: normal;
   /*color: #222;*/
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: .8rem;
 }
 p {
-	font-family: helvetica neue;
+	font-family: "Neue Helvetica W02","Helvetica Neue",Helvetica,Arial;
 	letter-spacing: -0.02em;
   font-weight: 400;
   font-size: 1.5rem;
