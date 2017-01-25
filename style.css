@@ -1,8 +1,8 @@
 .about {
 	text-align: left;
-	padding: 5%;
+	margin: 5%;
 }
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
 	/*font-family: helvetica-bold;*/
 	line-height: 1.2;
 	font-family: "Neue Helvetica W02","Helvetica Neue",Helvetica,Arial;
@@ -40,7 +40,9 @@ p {
 	padding-bottom: 50px;
 	background-color: rgb(41,45,47);
 	color: white;
-
+}
+#image-parallax {
+	height: 400px;
 }
 .img-responsive {
 	display: inline-block;
@@ -76,7 +78,7 @@ li {
 	left: 0;
   right: 0;
   margin: 0 auto;
-	margin-top: -300px;
+  margin-top: 40%;
 }
 #map {
 	top:0;
@@ -112,14 +114,9 @@ li {
 	text-align: center;
 	color: white;
 	margin-top: 15px;
-	font-size: 30px;
-}
-.tagline-info {
-	color: white ;
-	margin-top: 30px;
-}
-.tagline-info a{
-	color:white;
+	font-size: 4rem;
+	letter-spacing: 0.02em;
+
 }
 .rooms {
 	text-align: center;
@@ -139,7 +136,6 @@ li {
 	font-style: underline;
 	/*padding-bottom: 30px;*/
 }
-/*RSLIDES*/
 .rslides {
   position: relative;
   list-style: none;
@@ -174,14 +170,6 @@ li {
 #solutions {
 	margin-bottom: 5%;
 }
-.services {
-/*	padding: 5%;*/
-}
-.services-p {
-	text-align: left;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
 .services-img-label {
 	text-align: left;
 	margin-top: 5%;
@@ -191,7 +179,11 @@ li {
 	width: 100%;
 }
 .services-main {
-	padding: 5%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+.services-p {
+	margin-bottom: 10%;
 }
 .slides-row {
 	background-color: black;
@@ -205,7 +197,6 @@ ul {
 	background-color: white;
 	border-style: none;
 }
-/*RSLIDES END*/
 @media (max-width: 900px) {
 	.bx-window{
 		width:400;
@@ -222,8 +213,8 @@ ul {
 		background-color: rgb(41,45,47);
 	}
 
-	.tagline {
-		font-size: 12px;
+	#tagline {
+
 	}
 	.main {
 		margin-top: -110px;
