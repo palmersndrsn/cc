@@ -21,7 +21,7 @@ window.onload = function(){
 
   service.on('click', function(){
     $('html, body').animate({
-        scrollTop: $("#services").offset().top
+        scrollTop: $(".services-header").offset().top
     }, 1000);
     return false;
 
